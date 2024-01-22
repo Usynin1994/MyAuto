@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.usunin1994.myauto.feature.main_screen.presentation.fragment.MainScreenFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_newAutoScreenFragment"
+            app:destination="@id/newAutoScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_infoScreenFragment"
+            app:destination="@id/infoScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_subscriptionScreenFragment"
+            app:destination="@id/subscriptionScreenFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_settingsScreenFragment"
+            app:destination="@id/settingsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAutoScreenFragment"
+        android:name="com.usunin1994.myauto.feature.new_auto_screen.presentation.fragment.NewAutoScreenFragment"
+        android:label="fragment_new_auto"
+        tools:layout="@layout/fragment_new_auto" />
+    <fragment
+        android:id="@+id/infoScreenFragment"
+        android:name="com.usunin1994.myauto.feature.info_screen.presentation.fragment.InfoScreenFragment"
+        android:label="fragment_info_screen"
+        tools:layout="@layout/fragment_info_screen" />
+    <fragment
+        android:id="@+id/settingsScreenFragment"
+        android:name="com.usunin1994.myauto.feature.settings_screen.presentation.fragment.SettingsScreenFragment"
+        android:label="fragment_settings_screen"
+        tools:layout="@layout/fragment_settings_screen" />
+    <fragment
+        android:id="@+id/subscriptionScreenFragment"
+        android:name="com.usunin1994.myauto.feature.subscription_screen.presentation.fragment.SubscriptionScreenFragment"
+        android:label="fragment_subscriptoin_screen"
+        tools:layout="@layout/fragment_subscriptoin_screen" />
+</navigation>
